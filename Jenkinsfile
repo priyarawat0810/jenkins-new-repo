@@ -23,7 +23,8 @@ steps{jacoco()
 
 stage('Maven Package')
 {steps{
-echo 'Project packaging stage'bat label: 'Project packaging', script: '''mvn package'''
+echo 'Project packaging stage' 
+bat label: 'Project packaging', script: '''mvn package'''
 }
 }
 }
